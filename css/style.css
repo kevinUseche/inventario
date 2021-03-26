@@ -86,3 +86,9 @@ table tr{
     font-weight: 700;
     color: #353535;
 }
+.export{
+    margin-top: 2rem;
+}
+.export .btn{
+    margin: 2rem 0;
+}
