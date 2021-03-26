@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--======CDN FONTAWESOME====-->
+    <script src="https://kit.fontawesome.com/96d1ca8826.js" crossorigin="anonymous" defer></script>
+    <!--JS-->
+    <script src="js/app.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>Inventario</title>
+</head>
+
+<body>
+    <main class="container section">
+        <div class="main-content">
+            <div class="content-products">
+                <h3>Inventario <i class="fas fa-boxes"></i></h3>
+                <table id="table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Color</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mazda</td>
+                        <td>Mazda 3</td>
+                        <td>Plata</td>
+                        <td>150.000.000</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mazda</td>
+                        <td>Mazda 3</td>
+                        <td>Plata</td>
+                        <td>150.000.000</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mazda</td>
+                        <td>Mazda 3</td>
+                        <td>Plata</td>
+                        <td>150.000.000</td>
+                        <td>3</td>
+                    </tr>
+                  
+                </table>
+            </div>
+            <div class="option">
+                <div class="new-product">
+                    <h3>Añadir nuevo producto</h3>
+                    <input type="text" id="marca" placeholder="Marca">                
+                    <input type="text" id="modelo" placeholder="Modelo">
+                    <input type="text" id="color" placeholder="Color">
+                    <input type="number" id="precio" placeholder="Precio">
+                    <input type="number" id="cantidad" placeholder="Cantidad">
+                    <a href="#" id="new" class="btn">nuevo producto <i class="fas fa-plus"></i></a>
+                </div>
+                <div class="new-product">
+                    <h3>Modificar producto</h3>
+                    <input type="number" id="id-mod" min="1" placeholder="Id">
+                    <input type="text" id="marca-mod" placeholder="Marca">                
+                    <input type="text" id="model-mod" placeholder="Modelo">
+                    <input type="text" id="color-mod" placeholder="Color">
+                    <input type="number" id="price-mod" placeholder="Precio">
+                    <input type="number" id="stock-mod" placeholder="Cantidad">
+                    <a href="#" id="update" class="btn">modificar <i class="fas fa-pen"></i></a>
+                </div>
+                <div class="new-product">
+                    <h3>Realizar venta</h3>
+                    <input type="number" id="id-sell" placeholder="Id producto">
+                    <input type="number" id="count-sell" placeholder="Cantidad venta">
+                    <a href="#" id="sell" class="btn">vender <i class="fas fa-check"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+
+        </div>
+    </main>
+    <footer class="container">
+        <p><a href="https://github.com/kevinUseche/inventario" target="_blank" class="repo">ir al repositorio <i class="fab fa-github"></i></a> <span>kevin useche</span></p>
+    </footer>
+</body>
+
+</html>

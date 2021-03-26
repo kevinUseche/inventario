@@ -1,0 +1,88 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    color: #353535;
+}
+/*GLOBAL CLASS*/
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.btn {
+    padding: .8rem 2rem;
+    border-radius: 0.5rem;
+    border: .2rem solid #5d46e2;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    background: #5d46e2;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background: none;
+    color: #5d46e2;
+}
+/*STYLES*/
+.content-products h3{
+    margin-bottom: 2rem;
+}
+.content-products table{
+    text-align: left;
+    width: 100%;
+}
+table tr{
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.main-content > div{
+    background-color: #fcfcfc;
+    padding: 2rem;
+}
+.main-content > div:nth-child(1){
+    height: calc(100vh - (100vh/2));
+    overflow-y: scroll;
+    border-bottom: 1px solid #e1e1e1;
+}
+.new-product input{
+    display: block;
+    padding: .8rem 1.5rem;
+    margin: 1rem 0;
+    border: none;
+    border-bottom: .1rem solid #e1e1e1;
+}
+.option{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.repo{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #353535;
+}
