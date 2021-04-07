@@ -36,7 +36,7 @@ class Inventory{
     }
     sell(id,count){
         let product = this.inventory.find(product => product.id == id);
-        if(product == undefined || product.stock < count){
+        if(product == undefined || count > Number(product.stock)){
             return false;
         }else{
             product.stock -= count;
